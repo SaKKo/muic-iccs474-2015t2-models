@@ -38,4 +38,4 @@ Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
     - Creating `app/views/users/_users.html.erb`
 
 ## Faking User Session
-- Swaping user when user entered `users#show`
+- go to branch `session`
