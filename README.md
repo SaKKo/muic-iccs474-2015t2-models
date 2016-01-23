@@ -52,3 +52,12 @@ Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
 
 ## Adding Comments
 - go to branch `comments`
+- Adding comment validation
+- Creating comments and redirection in comments controller
+- Creating comment only for current user
+    - remove strong parameters
+
+## Exercise
+- Implement a feature to allow user to create Post for current user.
+
+## Login feature
