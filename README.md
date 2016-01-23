@@ -45,3 +45,7 @@ Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
 
 ## Post features
 - go to branch `posts`
+- Modify post to show owner
+    - check posts controller and views
+- Understanding user_path and post_path
+- Showing post's comments
