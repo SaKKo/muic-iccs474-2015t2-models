@@ -41,3 +41,7 @@ Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
 - go to branch `session`
 - Faking current user when user clicked `users#show`
 - Show current user on header
+- Logout with `delete` method
+
+## Post features
+- go to branch `posts`
