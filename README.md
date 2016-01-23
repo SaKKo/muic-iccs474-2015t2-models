@@ -22,3 +22,20 @@ running custom rake task `rake sample:seed`
 ## Using Rails Console
 
 Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
+
+## Modifying Header with rails path helper methods
+- `views/layouts/header`
+- update view helper test cases
+
+## Understanding Routes
+- 'config/routes.rb'
+- `resources` helper
+- request methods GET/POST/PUT/PATCH/DELETE
+- Understanding rails basic callbacks in controller.
+- Understanding basic of ActiveRecord.
+    - Query `@users`
+- Understanding Views and Partial
+    - Creating `app/views/users/_users.html.erb`
+
+## Faking User Session
+- Swaping user when user entered `users#show`

@@ -15,16 +15,11 @@
         <li class="<%= header_active('static_pages','home') %>"><a href="<%= static_pages_home_path %>">Home</a></li>
         <li class="<%= header_active('static_pages','about') %>"><a href="<%= static_pages_about_path %>">About</a></li>
         <li class="<%= header_active('static_pages','contact') %>"><a href="<%= static_pages_contact_path %>">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <li class="dropdown <%= dropdown_header_active(['users','posts']) %>">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Models <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+            <li class="<%= header_active('users','all') %>"><a href="<%= users_path %>">Users</a></li>
+            <li class="<%= header_active('posts','all') %>"><a href="<%= posts_path %>">Posts</a></li>
           </ul>
         </li>
       </ul>

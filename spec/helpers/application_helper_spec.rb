@@ -18,6 +18,12 @@ RSpec.describe ApplicationHelper, type: :helper do
       expect(helper.header_active('static_pages','home')).to eql 'active'
     end
 
+    it "returns active for action == 'all'" do
+      params = {controller: 'static_pages', action: 'home'}
+      allow(helper).to receive(:params) {params}
+      expect(helper.header_active('static_pages','all')).to eql 'active'
+    end
+
     it "returns empty" do
       params = {controller: 'static_pages', action: 'home'}
       allow(helper).to receive(:params) {params}
@@ -49,4 +55,10 @@ RSpec.describe ApplicationHelper, type: :helper do
     end
 
   end
+  describe "#dropdown_header_active" do
+    # TODO: Exercise, write testcases for this.
+    pending "return active"
+    pending "return empty"
+  end
+
 end
