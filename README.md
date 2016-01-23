@@ -49,3 +49,6 @@ Referring to `Chapter 4.2` on `Rails Tutorial by Michael Hartl `
     - check posts controller and views
 - Understanding user_path and post_path
 - Showing post's comments
+
+## Adding Comments
+- go to branch `comments`
