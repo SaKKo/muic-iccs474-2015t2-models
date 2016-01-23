@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def set_current_user
     user_id = session[:user_id]
-    @current_user = User.find(user_id) rescue User.first
+    @current_user = User.find(user_id) rescue User.new(first_name: "Guest")
   end
 
   def current_user

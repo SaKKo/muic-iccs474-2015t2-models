@@ -22,6 +22,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     session[:user_id] = @user.id
+    set_current_user
   end
 
   # GET /users/new
@@ -71,6 +72,11 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def logout
+    session.delete(:user_id)
+    redirect_to root_path, notice: "Logged out"
   end
 
   private

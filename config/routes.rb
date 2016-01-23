@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   resources :comments
   resources :posts
+
+  delete 'users/logout', to: 'users#logout'
+
   resources :users
   root to: 'static_pages#home'
 
